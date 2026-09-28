@@ -1,0 +1,210 @@
+﻿@model PayrollSystem.Models.Payroll
+
+@{
+    ViewData["Title"] = "Payslip";
+
+    decimal grossPay =
+        Model.BasicSalary + Model.OvertimePay;
+
+    decimal totalDeductions =
+        Model.CashAdvance + Model.Grocery;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+
+    <div>
+        <h1>Payslip</h1>
+        <p class="text-muted">
+            Payroll details and salary breakdown
+        </p>
+    </div>
+
+    <div>
+        <button onclick="window.print()"
+                class="btn btn-primary">
+            Print Payslip
+        </button>
+
+        <a asp-action="Index"
+           class="btn btn-secondary">
+            Back
+        </a>
+    </div>
+
+</div>
+
+<div class="card shadow-sm">
+
+    <div class="card-body p-4">
+
+        <div class="text-center mb-4">
+
+            <h2>PAYSLIP</h2>
+
+            <p class="text-muted mb-0">
+                Payroll System
+            </p>
+
+        </div>
+
+        <hr />
+
+        <div class="row mb-4">
+
+            <div class="col-md-6">
+
+                <strong>Employee</strong>
+
+                <p class="mb-0">
+                    @Model.Employee?.FullName
+                </p>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <strong>Payroll Period</strong>
+
+                <p class="mb-0">
+
+                    @Model.PayrollPeriodStart.ToString("MMM dd, yyyy")
+                    -
+                    @Model.PayrollPeriodEnd.ToString("MMM dd, yyyy")
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <h5 class="mb-3">
+            Work Summary
+        </h5>
+
+        <table class="table">
+
+            <tr>
+                <td>Days Worked</td>
+                <td class="text-end">
+                    @Model.DaysWorked
+                </td>
+            </tr>
+
+            <tr>
+                <td>Minutes Worked</td>
+                <td class="text-end">
+                    @Model.MinutesWorked
+                </td>
+            </tr>
+
+            <tr>
+                <td>Daily Rate</td>
+                <td class="text-end">
+                    ₱@Model.DailyRate.ToString("N2")
+                </td>
+            </tr>
+
+            <tr>
+                <td>Rate Per Minute</td>
+                <td class="text-end">
+                    ₱@Model.RatePerMinute.ToString("N4")
+                </td>
+            </tr>
+
+        </table>
+
+        <h5 class="mb-3 mt-4">
+            Earnings
+        </h5>
+
+        <table class="table">
+
+            <tr>
+                <td>Basic Salary</td>
+
+                <td class="text-end">
+                    ₱@Model.BasicSalary.ToString("N2")
+                </td>
+            </tr>
+
+            <tr>
+                <td>Overtime Pay</td>
+
+                <td class="text-end">
+                    ₱@Model.OvertimePay.ToString("N2")
+                </td>
+            </tr>
+
+            <tr class="fw-bold">
+
+                <td>
+                    Gross Pay
+                </td>
+
+                <td class="text-end">
+                    ₱@grossPay.ToString("N2")
+                </td>
+
+            </tr>
+
+        </table>
+
+        <h5 class="mb-3 mt-4">
+            Deductions
+        </h5>
+
+        <table class="table">
+
+            <tr>
+                <td>Cash Advance</td>
+
+                <td class="text-end">
+                    ₱@Model.CashAdvance.ToString("N2")
+                </td>
+            </tr>
+
+            <tr>
+                <td>Grocery</td>
+
+                <td class="text-end">
+                    ₱@Model.Grocery.ToString("N2")
+                </td>
+            </tr>
+
+            <tr class="fw-bold">
+
+                <td>
+                    Total Deductions
+                </td>
+
+                <td class="text-end">
+                    ₱@totalDeductions.ToString("N2")
+                </td>
+
+            </tr>
+
+        </table>
+
+        <hr />
+
+        <div class="row mt-4">
+
+            <div class="col-md-8">
+                <h3>
+                    NET PAY
+                </h3>
+            </div>
+
+            <div class="col-md-4 text-end">
+
+                <h3>
+                    ₱@Model.FinalSalary.ToString("N2")
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\views\\payrolls\\calculate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\views\\payrolls\\calculate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\controllers\\payrollscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\controllers\\payrollscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\views\\groceries\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\views\\groceries\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\views\\attendances\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\views\\attendances\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\controllers\\groceriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\controllers\\groceriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\views\\groceries\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\views\\groceries\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|c:\\users\\owner\\source\\repos\\payrollsystem\\payrollsystem\\views\\groceries\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D08CC042-C07B-4ED6-92E8-699E48C99688}|PayrollSystem\\PayrollSystem.csproj|solutionrelative:payrollsystem\\views\\groceries\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculate.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Payrolls\\Calculate.cshtml",
+              "RelativeDocumentMoniker": "PayrollSystem\\Views\\Payrolls\\Calculate.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Payrolls\\Calculate.cshtml",
+              "RelativeToolTip": "PayrollSystem\\Views\\Payrolls\\Calculate.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAowEoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T15:34:44.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PayrollSystem\\Views\\Groceries\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Delete.cshtml",
+              "RelativeToolTip": "PayrollSystem\\Views\\Groceries\\Delete.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T15:25:14.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Attendances\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PayrollSystem\\Views\\Attendances\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Attendances\\Delete.cshtml",
+              "RelativeToolTip": "PayrollSystem\\Views\\Attendances\\Delete.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwDUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-09T15:19:37.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PayrollsController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Controllers\\PayrollsController.cs",
+              "RelativeDocumentMoniker": "PayrollSystem\\Controllers\\PayrollsController.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Controllers\\PayrollsController.cs",
+              "RelativeToolTip": "PayrollSystem\\Controllers\\PayrollsController.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAALUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T15:11:58.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Create.cshtml",
+              "RelativeDocumentMoniker": "PayrollSystem\\Views\\Groceries\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Create.cshtml",
+              "RelativeToolTip": "PayrollSystem\\Views\\Groceries\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T08:11:42.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Index.cshtml",
+              "RelativeDocumentMoniker": "PayrollSystem\\Views\\Groceries\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Views\\Groceries\\Index.cshtml",
+              "RelativeToolTip": "PayrollSystem\\Views\\Groceries\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T08:05:42.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroceriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Controllers\\GroceriesController.cs",
+              "RelativeDocumentMoniker": "PayrollSystem\\Controllers\\GroceriesController.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\PayrollSystem\\PayrollSystem\\Controllers\\GroceriesController.cs",
+              "RelativeToolTip": "PayrollSystem\\Controllers\\GroceriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T08:03:13.364Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+﻿@model IEnumerable<PayrollSystem.Models.Payroll>
+
+@{
+    ViewData["Title"] = "Payroll";
+}
+
+@{
+    var payrollRecords = Model.ToList();
+
+    var totalPayroll = payrollRecords.Sum(p => p.FinalSalary);
+
+    var totalOvertime = payrollRecords.Sum(p => p.OvertimePay);
+
+    var totalDeductions = payrollRecords.Sum(
+        p => p.CashAdvance + p.Grocery);
+
+    var totalEmployees = payrollRecords
+        .Select(p => p.EmployeeId)
+        .Distinct()
+        .Count();
+}
+
+<div class="row mb-4">
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="text-muted">
+                    Total Payroll
+                </h6>
+
+                <h3>
+                    ₱@totalPayroll.ToString("N2")
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="text-muted">
+                    Employees
+                </h6>
+
+                <h3>
+                    @totalEmployees
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="text-muted">
+                    Overtime
+                </h6>
+
+                <h3>
+                    ₱@totalOvertime.ToString("N2")
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h6 class="text-muted">
+                    Deductions
+                </h6>
+
+                <h3>
+                    ₱@totalDeductions.ToString("N2")
+                </h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+
+        <div class="table-responsive">
+
+            <table class="table table-hover align-middle">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Employee</th>
+                        <th>Period</th>
+                        <th>Days</th>
+                        <th>Minutes</th>
+                        <th>Basic Salary</th>
+                        <th>Overtime</th>
+                        <th>Deductions</th>
+                        <th>Final Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        decimal deductions =
+                        item.CashAdvance + item.Grocery;
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    @item.Employee?.FullName
+                                </strong>
+                            </td>
+
+                            <td>
+                                @item.PayrollPeriodStart.ToString("MMM dd")
+                                -
+                                @item.PayrollPeriodEnd.ToString("MMM dd, yyyy")
+                            </td>
+
+                            <td>
+                                @item.DaysWorked
+                            </td>
+
+                            <td>
+                                @item.MinutesWorked
+                            </td>
+
+                            <td>
+                                ₱@item.BasicSalary.ToString("N2")
+                            </td>
+
+                            <td>
+                                ₱@item.OvertimePay.ToString("N2")
+                            </td>
+
+                            <td>
+                                ₱@deductions.ToString("N2")
+                            </td>
+
+                            <td>
+                                <strong>
+                                    ₱@item.FinalSalary.ToString("N2")
+                                </strong>
+                            </td>
+
+                            <td>
+                                <a asp-action="Details"
+                                   asp-route-id="@item.PayrollId"
+                                   class="btn btn-sm btn-outline-primary">
+                                    View
+                                </a>
+
+                                <a asp-action="Edit"
+                                   asp-route-id="@item.PayrollId"
+                                   class="btn btn-sm btn-outline-secondary">
+                                    Edit
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+</div>
